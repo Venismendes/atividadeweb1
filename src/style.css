@@ -1,0 +1,108 @@
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  padding: 0rem 1rem;
+  
+}
+
+.menu .contact {
+  position: absolute;
+  padding: 0.8rem 2rem;
+  right: 1.5rem;
+  top: 1.5rem;
+  background-color: #888;
+  border: none;
+  border-radius: 5px;
+}
+
+.menu .contact:hover {
+  position: absolute;
+  padding: 0.8rem 2rem;
+  right: 1.5rem;
+  top: 1.5rem;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  background-color: #ddd;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.menu a {
+  color: black;
+}
+
+.body {
+  display: flex;
+  padding: 3rem 5rem;
+  gap: 2rem;
+}
+
+.body .learnmore {
+  padding: 0.8rem 2rem;
+  background-color: #BC6C25;
+  border: none;
+  border-radius: 5px;
+}
+.body .learnmore:hover {
+  padding: 0.8rem 2rem;
+  background-color: #DDA15E;
+  border: none;
+  border-radius: 5px;
+}
+
+.body a {
+  color: white;
+}
+
+.body div {
+  width: 50%;
+}
+.body iframe {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu ul {
+    padding: 0;
+  }
+
+  .menu li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .menu .contact {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .body {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .body div, .body iframe {
+    width: 100%;
+  }
+
+  .body .learnmore {
+    width: 100%;
+    text-align: center;
+  }
+}
