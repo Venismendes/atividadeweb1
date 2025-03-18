@@ -6,7 +6,6 @@ a {
 .menu {
   display: flex;
   padding: 0rem 1rem;
-  
 }
 
 .menu .contact {
@@ -20,13 +19,7 @@ a {
 }
 
 .menu .contact:hover {
-  position: absolute;
-  padding: 0.8rem 2rem;
-  right: 1.5rem;
-  top: 1.5rem;
   background-color: #ddd;
-  border: none;
-  border-radius: 5px;
 }
 
 .menu li {
@@ -53,11 +46,9 @@ a {
   border: none;
   border-radius: 5px;
 }
+
 .body .learnmore:hover {
-  padding: 0.8rem 2rem;
   background-color: #DDA15E;
-  border: none;
-  border-radius: 5px;
 }
 
 .body a {
@@ -67,8 +58,46 @@ a {
 .body div {
   width: 50%;
 }
+
 .body iframe {
   width: 50%;
+}
+
+.body2, .body3 {
+  display: flex;
+  padding: 0rem 5rem;
+  gap: 2rem;
+}
+
+.titulo2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  top: 5rem;
+}
+
+.imagem {
+  width: 15rem;
+  display: flex;
+  text-align: center;
+  height: 100%;
+}
+
+.footer {
+  background-color: #888;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 15rem;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -79,22 +108,31 @@ a {
   }
 
   .menu ul {
+    width: 100%;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .menu li {
     display: block;
     margin: 0.5rem 0;
+    width: 100%;
+    text-align: center;
   }
 
   .menu .contact {
     position: static;
     margin-top: 1rem;
+    width: 100%;
+    text-align: center;
   }
 
   .body {
     flex-direction: column;
     padding: 2rem;
+    align-items: center;
   }
 
   .body div, .body iframe {
@@ -104,5 +142,29 @@ a {
   .body .learnmore {
     width: 100%;
     text-align: center;
+  }
+
+  .body2, .body3 {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .titulo2 {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+
+  .skills {
+    top: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .imagem {
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
   }
 }
