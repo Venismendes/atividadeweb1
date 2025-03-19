@@ -1,66 +1,76 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portifólio</title>
+  <title>Barbearia Estilo</title>
   <link rel="stylesheet" href="src/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="menu">
-    <H1></H1>
-    <ul>
-      <li><a href="">SOBRE</a></li>
-      <li><a href="">PERFIL</a></li>
-      <li><a href="">BLOG</a></li>
-    </ul>
-    <button class="contact"><a href="">Contato</a></button>
-  </div>
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Barbearia Estilo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms">
+                <li class="nav-item">
+                    <a class="nav-link" href="#corte">CORTE DE CABELO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#barba">BARBA E DESIGN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#massagem">MASSAGEM FACIAL</a>
+                </li>
+            </ul>
+            <a href="#" class="btn btn-secondary ms-auto">Agendar Horário</a>
+        </div>
+    </div>
+  </nav>
 
   <div class="body">
     <div>
-      <h1>Bem vindo ao portifólio de Venismendes Santos</h1>
-      <p>Olá! Meu nome é Venismendes e sou estudante do 8º período de Ciência da Computação. Sou apaixonado por tecnologia, desenvolvimento de software e tudo que envolve inovação digital. Ao longo da minha jornada acadêmica, venho adquirindo conhecimentos em programação, algoritmos, banco de dados e diversas outras áreas. <br><br> Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades. Meu objetivo é desenvolver soluções que impactem positivamente as pessoas e o mercado. Se quiser trocar uma ideia sobre tecnologia ou colaborar em projetos, fique à vontade para entrar em contato!
-      </p>
-      <button class="learnmore"><a href="">Learn More</a></button>
+      <h1>Bem-vindo à Barbearia Estilo</h1>
+      <p>Somos especialistas em cortes modernos e tradicionais, proporcionando um ambiente confortável e atendimento de qualidade. Nossa missão é realçar sua personalidade com estilo e confiança. Venha nos visitar e sinta a diferença de um serviço premium.</p>
+      <button class="learnmore"><a href="">Saiba Mais</a></button>
     </div>
-    <iframe width="560" height="315" src="/src/img/video.mp4" title="Jogando no PC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://media.tenor.com/9kDHnIWyALwAAAAM/barber-shop-the.gif" title="Nossa Barbearia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
-  <h1 class="titulo2">Meus Projetos</h1>
+  <h1 class="titulo2">Nossos Serviços</h1>
   <div class="body2">
     <div class="skills">
-      <img class="imagem" src="/src/img/jogando2.png" alt="QuickClick">
+      <img class="imagem" src="https://images.unsplash.com/photo-1589985494639-69e60c82cab2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Corte de Cabelo">
     </div>
     <div class="skills">
-      <img class="imagem" src="/src/img/jogando3.png" alt="Terror na Estrada">
+      <img class="imagem" src="https://plus.unsplash.com/premium_photo-1661542350224-8e3f095ce053?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Barba e Design">
     </div>
     <div class="skills">
-      <img class="imagem" src="/src/img/jogando.png" alt="Sudoku">
+      <img class="imagem" src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Massagem Facial">
     </div>
   </div>
 
   <div class="body3">
     <div class="skills">
-    <h3>QuickClick</h3>
-      <p>O intuito do jogo é clicar o mais rápido possível nos quadrados pretos e atingir o máximo de pontos em 30 segundos, cada clique certo soma 1 ponto, cada clique errado perde 1 ponto.</p>
-
+      <h3 id="corte">Corte de Cabelo</h3>
+      <p>Estilos clássicos e modernos para todos os gostos, feitos por barbeiros profissionais. Utilizamos técnicas avançadas e produtos de alta qualidade para garantir um corte impecável e um visual renovado.</p>
     </div>      
     <div class="skills">
-    <h3>Terror na Estrada</h3>
-    <p>O intuito do jogo é escapar de uma situação adversa na estrada, baseado em jogos das primeiras gerações de computadores onde os jogos aconteciam apenas em terminal de texto, feito como projeto da disciplina de Paradígmas de programação.</p>
+      <h3 id="barba">Barba e Design</h3>
+      <p>Barbas alinhadas, modeladas e cuidadas para um visual impecável. Trabalhamos com precisão e detalhamento para proporcionar um acabamento perfeito, respeitando o estilo de cada cliente.</p>
     </div>
     <div class="skills">
-    <h3>Sudoku</h3>
-      <p>O Sudoku é um jogo de lógica numérica jogado em uma grade de 9x9, dividida em 9 subgrades de 3x3. O objetivo é preencher a grade com números de 1 a 9, garantindo que: <br> 
-        1 - Cada linha tenha os números de 1 a 9 sem repetição.<br>
-        2 - Cada coluna tenha os números de 1 a 9 sem repetição.<br>
-        3 - Cada subgrade 3x3 tenha os números de 1 a 9 sem repetição.</p>
+      <h3 id="massagem">Massagem Facial</h3>
+      <p>Relaxamento e revitalização para sua pele com técnicas especializadas. Nossa massagem facial melhora a circulação, reduz o estresse e proporciona uma sensação de frescor e bem-estar.</p>
     </div>
   </div>
   
-  
   <footer class="footer">
-    <p>&copy; 2025 - Todos os direitos reservados</p>
+    <p>&copy; 2025 - Barbearia Estilo - Todos os direitos reservados</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
 </body>
 </html>
